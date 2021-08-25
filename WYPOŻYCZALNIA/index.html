@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelWithMe!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Dosis:wght@300&family=Fira+Sans:wght@300&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/JavaScript" src="JS/myScript.js"></script>
+    <link rel="stylesheet" href="fontello/fontello.css">
+</head>
+<body>
+
+    <div class="main">
+        <ul class="navbar">
+            <li> <a href=#></a> TravelWithMe!</a></li>
+            <li> <a href="index.html"> Zarezerwuj samochód</a></li>
+            <li><a href="long_term_reservation.html">Wynajem długoterminowy</a></li>
+            <li><a href="companies_offer.html">Oferta dla firm</a></li>
+            <li><a href="all_cars.php">Flota</a></li>
+            <li><a href="about.html">O nas</a></li>
+            <li><a href="insurance.html">Wynajem z OC</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+
+        <h2 class="main_slogan">Zadbamy o Twoją podróż!</h2>
+        <div class="main_form">
+
+            <form action="reservation.php" method="POST">
+                <select name="region_take" id="region_take" onfocus='this.size=1;' onblur='this.size=0;' onchange='this.size=1; this.blur();' required>
+                    <option value="" disabled selected>Wybierz miejsce wypożyczenia:</option>
+                    <option value="Bałuty">Łódź, Bałuty</option>
+                 </select>
+                 
+                 <input type="date"  name="take_date" id="take_date" placeholder="Wybierz datę" required>
+                 <input type="time"  name="take_hours" id="take_hours" placeholder="Wybierz godzinę" required>
+
+                 <select name="region_back" id="region_back" onfocus='this.size=1;' onblur='this.size=0;' onchange='this.size=1; this.blur();' required>
+                    <option value="" disabled selected>Wybierz miejsce zwrotu:</option>
+                    <option value="Bałuty">Łódź, Bałuty</option>
+                 
+                </select>
+                 <input type="date"  name="back_date" id="back_date" placeholder="Wybierz datę" required>
+                 <input type="time"  name="back_hours" id="back_hours" placeholder="Wybierz godzinę" required>                     
+                <input type="submit" class="butt_form" value="ZNAJDŹ SAMOCHÓD">
+            </form>
+        </div>
+    </div>
+
+    <footer id="footer">
+
+        <div class="contact-container">
+            <h2 class="footer_headers">Kontakt</h2>
+            <h3 class="contact_txt">
+                <b>Ulica:</b> Generała Tadeusza Kutrzeby 521D</br>
+                <b>Miasto:</b> Łódź</br>
+                <b>Kod pocztowy:</b> 91-012 </br>
+                <b>Telefon:</b> 123-456-789 </br>
+                <b>E-mail:</b> test123@gmail.com </br>
+        </div>
+
+        <div class="menu-oferta-container">
+            <h2 class="footer_headers">Menu</h2>
+            <ul class="menu-oferta">
+                <li><a href="index.html">Zarezerwuj samochód</a></li>
+                <li><a href="long_term_reservation.html">Wynajem długoterminowy</a></li>
+                <li><a href="insurance.html">Wynajem z OC sprawcy</a></li>
+                <li><a href="companies_offer.html">Oferta dla firm</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-linki-container">
+            <h2 class="footer_headers">Info</h2>
+            <ul class="menu-linki">
+                <li> <a href="about.html">O nas</a></li>
+                <li><a href="all_cars.php">Flota</a></li>
+                <li><a href="#">Punkty wynajmu</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="socials">
+            <h2 class="footer_header_socials">Socials</h2>
+            <div class="fb">
+                <a href="https://www.facebook.com/"><i class="demo-icon icon-facebook white"></i></a>
+            </div>
+
+            <div class="yt">
+                <a href="https://www.youtube.com/"><i class="demo-icon icon-youtube white"></i></a>
+            </div>
+
+            <div class="tw">
+                <a href="https://twitter.com/?lang=pl"><i class="demo-icon icon-twitter-circled white"></i></a>
+            </div>
+
+            <div class="insta">
+                <a href="https://www.instagram.com/"><i class="demo-icon icon-instagram white"></i></a>
+            </div>
+
+            <div class="link">
+                <a href="https://www.linkedin.com/feed/"><i class="demo-icon icon-linkedin-squared white"></i></a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
