@@ -1,9 +1,9 @@
 <?php
 
-$host = '127.0.0.1';
-$user = 'root';
-$password = '';
-$dbname = 'wypozyczalnia';
+$host = 'localhost';
+$user = 'u676824251_JaroslawGrzeda';
+$password = 'bachelorsDegree2021';
+$dbname = 'u676824251_wypozyczalnia';
 
 $mysqli = new mysqli($host,$user,$password,$dbname);
 $mysqli->query("SET NAMES 'utf8' COLLATE 'utf8_polish_ci'");

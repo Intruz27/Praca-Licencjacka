@@ -64,7 +64,7 @@ require('functions.php');
             {
                 echo '<div class="card_data_res">';
                 echo '<div class="card_image">';
-                echo ' <img src="assets/'.$r['photo_url'].'" class="card_image_properties" alt="'.$r['name']. ' ' .$r['type'].'">';
+                echo ' <img src="Assets/'.$r['photo_url'].'" class="card_image_properties" alt="'.$r['name']. ' ' .$r['type'].'">';
                 echo '</div>';
                 echo ' <div class="card_txt_res">';
                 echo '<button type="button" onclick="reserve('.$r['id'].');" class="btn_zarezerwuj btn btn-info">ZAREZERWUJ</button>';
